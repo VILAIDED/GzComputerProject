@@ -1,10 +1,12 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
-
+using System.Runtime.Serialization;
 namespace ServerGz.Models
-{
+{ 
+    [DataContract(IsReference=true)]
     public class Bill
     {
+        
         public int id {get;set;}
 
         public string name {get;set;}
@@ -17,6 +19,6 @@ namespace ServerGz.Models
 
         [ForeignKey("accountName")]
         public Account account {get;set;}
-        public IEnumerable<BillInfo> billInfo {get;set;}
+        public ICollection<BillInfo> billInfo {get;set;}
     }
 }

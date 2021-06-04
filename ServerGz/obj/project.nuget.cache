@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ei5ouvHMxsUCriqj6O8kFb/LygqAk3r6RuMGlgmRTKJnwziLV6DQhPRS4Lzzn4K0klRkTakd32vM09UOvYnzvw==",
+  "dgSpecHash": "sD4qRE12godE2aKYArXc9IslVCK1MciqWalZuccGvKrr62GVmYmImLloZWRg6jQ5aGexvptPOqjUp+8dBF4LMg==",
   "success": true,
   "projectFilePath": "/home/gz/GzComputerProject_/ServerGz/ServerGz.csproj",
   "expectedPackageFiles": [
@@ -15,6 +15,8 @@
     "/home/gz/.nuget/packages/microsoft.aspnetcore.html.abstractions/2.2.0/microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "/home/gz/.nuget/packages/microsoft.aspnetcore.http.abstractions/2.2.0/microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "/home/gz/.nuget/packages/microsoft.aspnetcore.http.features/2.2.0/microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
+    "/home/gz/.nuget/packages/microsoft.aspnetcore.jsonpatch/5.0.6/microsoft.aspnetcore.jsonpatch.5.0.6.nupkg.sha512",
+    "/home/gz/.nuget/packages/microsoft.aspnetcore.mvc.newtonsoftjson/5.0.6/microsoft.aspnetcore.mvc.newtonsoftjson.5.0.6.nupkg.sha512",
     "/home/gz/.nuget/packages/microsoft.aspnetcore.razor/2.2.0/microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "/home/gz/.nuget/packages/microsoft.aspnetcore.razor.language/5.0.0/microsoft.aspnetcore.razor.language.5.0.0.nupkg.sha512",
     "/home/gz/.nuget/packages/microsoft.aspnetcore.razor.runtime/2.2.0/microsoft.aspnetcore.razor.runtime.2.2.0.nupkg.sha512",
@@ -69,6 +71,7 @@
     "/home/gz/.nuget/packages/microsoft.visualstudio.web.codegenerators.mvc/5.0.2/microsoft.visualstudio.web.codegenerators.mvc.5.0.2.nupkg.sha512",
     "/home/gz/.nuget/packages/microsoft.win32.registry/4.5.0/microsoft.win32.registry.4.5.0.nupkg.sha512",
     "/home/gz/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
+    "/home/gz/.nuget/packages/newtonsoft.json.bson/1.0.2/newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "/home/gz/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.0.4/sqlitepclraw.bundle_e_sqlite3.2.0.4.nupkg.sha512",
     "/home/gz/.nuget/packages/sqlitepclraw.core/2.0.4/sqlitepclraw.core.2.0.4.nupkg.sha512",
     "/home/gz/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.0.4/sqlitepclraw.lib.e_sqlite3.2.0.4.nupkg.sha512",

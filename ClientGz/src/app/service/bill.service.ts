@@ -28,7 +28,7 @@ export class BillService {
 
     let billInfos:BillInfo[] =[];
     items.forEach(item => {
-      let billInfo: BillInfo ={
+      var billInfo: BillInfo ={
         id : null,
         billId : null,
         comId : item.computer.id,
@@ -37,19 +37,10 @@ export class BillService {
       }
       billInfos.push(billInfo);
     });
-    
+
     bill.billInfo = billInfos;
     console.log(bill);
-    let billTest: Bill ={
-      id:null,
-      name:"nguyen",
-      phone:null,
-      address:null,
-      totalPrice:100,
-      billInfo: billInfos
-    }
-
-    return this.http.post<Bill>(this.billUrl, billTest, {headers : this.setHeader()});
+    return this.http.post<Bill>(this.billUrl, bill, {headers : this.setHeader()});
   }
 
   getBill(): Observable<Bill[]> {

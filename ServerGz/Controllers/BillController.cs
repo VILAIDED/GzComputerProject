@@ -28,11 +28,11 @@ namespace GzWeb.Controllers
         }
 
         [HttpPost]
-        [Authorize]
+        //[Authorize]
         public IActionResult AddBill(Bill bill)
         {
             Console.WriteLine("access add bill");
-            bill.accountName = User.Identity.Name;
+            /*bill.accountName = User.Identity.Name;
 
             _context.Bill.Add(bill);
             _context.SaveChangesAsync();
@@ -50,7 +50,7 @@ namespace GzWeb.Controllers
                 _context.BillInfo.Add(billInfo);
                 _context.SaveChangesAsync();
                 HttpContext.Session.Clear();
-            }
+            }*/
 
             return NoContent();
         }

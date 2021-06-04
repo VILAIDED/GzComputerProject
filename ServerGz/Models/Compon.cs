@@ -1,5 +1,5 @@
-using System.Text.Json.Serialization;
-
+//using System.Text.Json.Serialization;
+using Newtonsoft.Json;
 namespace ServerGz.Models
 {
     public class Compon
@@ -16,7 +16,7 @@ namespace ServerGz.Models
 
         public int computerId { get; set; }
 
-        [JsonIgnore]
+       [JsonIgnore]
         public Computer computer { get; set; }
     }
 }
