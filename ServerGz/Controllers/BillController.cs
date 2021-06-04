@@ -31,6 +31,8 @@ namespace GzWeb.Controllers
         //[Authorize]
         public IActionResult AddBill(Bill bill)
         {
+            //MEOW MEOW
+            
             Console.WriteLine("access add bill");
             /*bill.accountName = User.Identity.Name;
 
