@@ -1,0 +1,64 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>
+      <mat-icon>menu</mat-icon><b class="textIcon">Menu</b>
+    </mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/home">
+        <mat-icon>home</mat-icon><b class="textIcon">Gz Home</b>
+      </a>
+      <a mat-list-item (click)="openAnalysis()">
+        <mat-icon>timeline</mat-icon><b class="textIcon">Top Sell</b>
+      </a>
+      <a mat-list-item (click)="openCart()">
+        <mat-icon >shopping_cart</mat-icon><b class="textIcon">My Cart</b>
+      </a>
+      <a mat-list-item (click)="openAccount()">
+        <mat-icon>account_circle</mat-icon><b class="textIcon">My Account</b>
+      </a>
+      <a mat-list-item (click)="openOder()">
+        <mat-icon>departure_board</mat-icon><b class="textIcon">My older</b>
+      </a>
+      <a mat-list-item>
+        <mat-icon>settings</mat-icon><b class="textIcon">Setting</b>
+      </a>
+      <a mat-list-item (click)="openContact()">
+        <mat-icon>call</mat-icon><b class="textIcon">Contact</b>
+      </a>
+      <a mat-list-item>
+        <mat-icon>question_answer</mat-icon><b class="textIcon">Chat</b>
+      </a>
+      <a mat-list-item>
+        <mat-icon>feedback</mat-icon><b class="textIcon">Send FeedBack</b>
+      </a>
+      <a mat-list-item >
+        <mat-icon>help</mat-icon><b class="textIcon">Help</b>
+      </a>
+      <a mat-list-item (click)="openMap()">
+        <mat-icon>room</mat-icon><b class="textIcon">Location</b>
+      </a>
+      <a mat-list-item (click)="openAboutUs()">
+        <mat-icon>business</mat-icon><b class="textIcon">About Gz</b>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button mat-button matTooltip="Gz Home" routerLink="/home"><mat-icon>laptop</mat-icon> Gz Computer</button>
+      
+      <span class="example-spacer"></span>
+      <button mat-icon-button>
+        <mat-icon matTooltip="my cart" (click)="openCart()">shopping_cart</mat-icon>
+      </button>
+      <button mat-icon-button>
+        <mat-icon matTooltip="Account" (click)="openAccount()">account_circle</mat-icon>
+      </button>
+
+    </mat-toolbar>
+
+    <!--router-outlet></router-outlet-->
+    <app-computer></app-computer>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>

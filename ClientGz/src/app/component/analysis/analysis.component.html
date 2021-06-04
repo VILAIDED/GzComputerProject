@@ -1,0 +1,11 @@
+<div mat-dialog-content fxLayoutGap="20px" style="width:1000px;height: 1000px;">
+    <h1>Top computer sell:</h1>
+    <button (click)="line()" mat-raised-button color="primary">Line Graph</button>
+    <button (click)="doughnut()" mat-raised-button color="primary">Doughnut Graph</button>
+    <button (click)="bar()" mat-raised-button color="primary">Bar Graph</button>
+    <hr>
+    <div style="width:100%;">
+        <canvas id="chartBarDisplay" width="700" height="250" #chartBar></canvas>
+    </div>
+
+</div>
